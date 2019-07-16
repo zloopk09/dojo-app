@@ -1,1 +1,28 @@
 include ':app', ':module'
+
+
+include ':lib_debug'
+project(':lib_debug').projectDir = new File(settingsDir, '../lib_debug/lib_debug')
+
+include ':lib_network'
+project(':lib_network').projectDir = new File(settingsDir, '../lib_network/lib_network')
+
+include ':lib_utils'
+project(':lib_utils').projectDir = new File(settingsDir, '../lib_utils/lib_utils')
+
+include ':lib_widget'
+project(':lib_widget').projectDir = new File(settingsDir, '../lib_widget/lib_widget')
+
+include ':module_article'
+project(':module_article').projectDir = new File(settingsDir, '../module_article/module_article')
+
+include ':module_discovery'
+project(':module_discovery').projectDir = new File(settingsDir, '../module_discovery/module_discovery')
+
+include ':module_home'
+project(':module_home').projectDir = new File(settingsDir, '../module_home/module_home')
+
+include ':module_user'
+project(':module_user').projectDir = new File(settingsDir, '../module_user/module_user')
+
+
