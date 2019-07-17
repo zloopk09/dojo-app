@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("top.zloop.mobile.dojo", appContext.getPackageName());
+        assertEquals("top.zloop.mobile.dojo.test", appContext.getPackageName());
     }
 }

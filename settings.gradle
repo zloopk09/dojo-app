@@ -1,4 +1,4 @@
-include ':app', ':module'
+include ':app'
 
 
 include ':lib_debug'
