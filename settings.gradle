@@ -25,4 +25,5 @@ project(':module_home').projectDir = new File(settingsDir, '../module_home/modul
 include ':module_user'
 project(':module_user').projectDir = new File(settingsDir, '../module_user/module_user')
 
-
+include ':module_base'
+project(':module_base').projectDir = new File(settingsDir, '../module_base/module_base')
