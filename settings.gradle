@@ -1,17 +1,6 @@
 include ':app'
 
 if (!isRunAlone.toBoolean()) {
-    include ':lib_debug'
-    project(':lib_debug').projectDir = new File(settingsDir, '../lib_debug/lib_debug')
-
-    include ':lib_network'
-    project(':lib_network').projectDir = new File(settingsDir, '../lib_network/lib_network')
-
-    include ':lib_utils'
-    project(':lib_utils').projectDir = new File(settingsDir, '../lib_utils/lib_utils')
-
-    include ':lib_widget'
-    project(':lib_widget').projectDir = new File(settingsDir, '../lib_widget/lib_widget')
 
     include ':module_article'
     project(':module_article').projectDir = new File(settingsDir, '../module_article/module_article')
@@ -27,5 +16,21 @@ if (!isRunAlone.toBoolean()) {
 
     include ':module_base'
     project(':module_base').projectDir = new File(settingsDir, '../module_base/module_base')
+
+
+    include ':lib_debug'
+    project(':lib_debug').projectDir = new File(settingsDir, '../lib_debug/lib_debug')
+
+    include ':lib_network'
+    project(':lib_network').projectDir = new File(settingsDir, '../lib_network/lib_network')
+
+    include ':lib_utils'
+    project(':lib_utils').projectDir = new File(settingsDir, '../lib_utils/lib_utils')
+
+    include ':lib_widget'
+    project(':lib_widget').projectDir = new File(settingsDir, '../lib_widget/lib_widget')
+
+    include ':lib_ui'
+    project(':lib_ui').projectDir = new File(settingsDir, '../lib_ui/lib_ui')
 
 }
